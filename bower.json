@@ -1,0 +1,24 @@
+{
+  "name": "xuedaoji",
+  "homepage": "https://github.com/leglars/xuedaoji",
+  "authors": [
+    "leglars.Zheng <leglars@gmail.com>"
+  ],
+  "description": "a education company project",
+  "main": "",
+  "keywords": [
+    "webproject"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7"
+  }
+}
