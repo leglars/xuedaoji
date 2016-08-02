@@ -1,0 +1,49 @@
+
+
+/*=========================================
+     Header
+=========================================*/
+.navbar-default {
+    background-color: rgba(255, 255, 255, 0);
+    border-color: #FFF transparent;
+}
+
+.navbar {
+    border:0 transparent;
+}
+
+.nav-wrap {
+     padding-top: 40px;
+ }
+
+ul#nav-item > li {
+    padding-right: 20px;
+}
+
+.nav-wrap,
+ul#nav-item > li,
+#logo {
+    -webkit-transition: padding 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+    -moz-transition: padding 0.1s ease-out;  /* Firefox 4-15 */
+    -o-transition: padding 0.1s ease-out;  /* Opera 10.50â€“12.00 */
+    transition: padding 0.1s ease-out;
+}
+
+#nav-collapse-list {
+    /*  the total padding of nav is 80px,
+    and the header (.nav-wrap) already offers 40px
+    */
+    padding-top: calc(80px - 40px);
+}
+
+#logo {
+    padding-left: calc(80px - 15px);
+}
+
+.banner {
+    z-index: 100;
+    width: 100%;
+    border: none;
+    background: transparent;
+    position: absolute;
+}

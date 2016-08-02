@@ -1,0 +1,59 @@
+/*   mid desktop   */
+@media (min-width: 992px), (max-width: 1600px) {
+    /*=====================
+        header
+    =======================*/
+
+    ul#nav-item > li {
+        padding-right: 10px;
+    }
+
+}
+
+
+/*   small desktop   */
+@media (max-width: 992px) {
+
+    /*=====================
+       header
+    =======================*/
+
+    .nav-wrap {
+        padding-top: 36px;
+    }
+
+    #nav-collapse-list {
+        padding-top: calc(80px - 16px - 24px);
+    }
+
+    ul#nav-item > li {
+        padding-right: 0;
+    }
+
+    .navbar-font {
+        font-size: 16px;
+    }
+
+    #logo {
+        padding-left: calc(80px - 40px - 15px);
+    }
+
+    .navbar-right {
+        float: left!important;
+        margin-left: 10px;
+    }
+}
+
+
+/*   tablet   */
+@media (max-width: 768px) {
+
+    /*======================
+       header
+    ========================*/
+
+    .nav-wrap {
+        padding-top: 24px;
+    }
+
+}

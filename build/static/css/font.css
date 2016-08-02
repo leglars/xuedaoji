@@ -1,0 +1,27 @@
+body {
+    font-family: 黑体，苹方，宋体;
+}
+
+.navbar-font{
+    font-size: 18px;
+    -webkit-transition: font-size 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+    -moz-transition: font-size 0.1s ease-out;  /* Firefox 4-15 */
+    -o-transition: font-size 0.1s ease-out;  /* Opera 10.50â€“12.00 */
+    transition: font-size 0.1s ease-out;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #FFFFFF;
+    -webkit-transition: color 0.2s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+    -moz-transition: color 0.2s ease-out;  /* Firefox 4-15 */
+    -o-transition: color 0.2s ease-out;  /* Opera 10.50â€“12.00 */
+    transition: color 0.2s ease-out;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    color: #ffd600;
+    -webkit-transition: color 0.2s ease-out;  /* Chrome 1-25, Safari 3.2+ */
+    -moz-transition: color 0.2s ease-out;  /* Firefox 4-15 */
+    -o-transition: color 0.2s ease-out;  /* Opera 10.50â€“12.00 */
+    transition: color 0.2s ease-out;
+}

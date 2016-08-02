@@ -14,16 +14,73 @@
     <link rel="stylesheet" href="static/css/media.css">
 
     <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
-
+    <script type="text/javascript" src="//cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <script type="text/javascript" src="js/hero.js"></script>
 </head>
 <body>
-<header>
-    <nav></nav>
+<header id="navbar-top" class="banner" role="banner">
+    <!--<div class="affix affix-top">-->
+
+    <nav class="navbar navbar-default">
+        <div class="nav-wrap"><div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button id="collapse-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#nav-collapse-list" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div id="logo">
+                    <a href="index.html" class="navbar-brand">
+                        <!--学道吉-->
+                        <img alt="Brand" src="static/image/logo-white.png">
+                    </a>
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="nav-collapse-list">
+                <ul id="nav-item" class="nav navbar-nav navbar-right">
+                    <li class="menu-index"><a class="navbar-font" href="#">首页</a></li>
+                    <li class="menu-course"><a class="navbar-font" href="#">课程介绍</a></li>
+                    <li class="menu-teacher"><a class="navbar-font" href="#">师资力量</a></li>
+                    <li class="menu-story"><a class="navbar-font" href="#">留学故事</a></li>
+                    <li class="menu-community"><a class="navbar-font" href="#">社区</a></li>
+                    <li class="menu-search"></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid --></div>
+    </nav>
+    <!--</div>-->
 </header>
 <main>
-    <section></section>
+    
     <section></section>
 </main>
 <footer></footer>
+
+<script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!--youku web font loading Api-->
+<!--
+1) "id1"、"id2"即为要应用字体效果的标签id名字；"class1"、"class2"即为要应用字体效果的标签class名字；粘贴后请自行替换为您页面上真实的标签id或class名字；"h1"、"h2"即为要应用字体效果的标签名(非标签id名字)，不需要设置标签的id名字或class名字，直接以标签名设置为引用标识。
+2) ．．．是指此处可以设置多个应用语句；
+3) 请您根据自身需要设置一个或多个标签；设置可以用标签的id名字也可以用class名字，不同更新频率或不同数据源的标签请勿用class名字设置；
+4) 每次刷新内容都会变的标签，请勿设置有字库字体。
+
+-->
+<script type="text/javascript">
+//    $youziku.load("#id1", "95fa0314ff2f4e838ea25ab2fc5fae9d", "SiYuanRegular");
+    /*$youziku.load("#id2", "95fa0314ff2f4e838ea25ab2fc5fae9d", "SiYuanRegular");*/
+    $youziku.load(".navbar-font", "95fa0314ff2f4e838ea25ab2fc5fae9d", "SiYuanRegular");
+    /*$youziku.load(".class2", "95fa0314ff2f4e838ea25ab2fc5fae9d", "SiYuanRegular");*/
+    /*$youziku.load("h1", "95fa0314ff2f4e838ea25ab2fc5fae9d", "SiYuanRegular");*/
+    /*$youziku.load("h2", "95fa0314ff2f4e838ea25ab2fc5fae9d", "SiYuanRegular");*/
+    /*．．．*/
+    $youziku.draw();
+</script>
+<!--Api End-->
 </body>
 </html>
