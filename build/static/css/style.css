@@ -22,7 +22,7 @@ ul#nav-item > li {
 
 .nav-wrap,
 ul#nav-item > li,
-#logo {
+#logo-container {
     -webkit-transition: padding 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
     -moz-transition: padding 0.1s ease-out;  /* Firefox 4-15 */
     -o-transition: padding 0.1s ease-out;  /* Opera 10.50â€“12.00 */
@@ -36,8 +36,17 @@ ul#nav-item > li,
     padding-top: calc(80px - 40px);
 }
 
-#logo {
+#logo-container {
     padding-left: calc(80px - 15px);
+}
+
+#logo {
+    width: 100%;
+    height: auto;
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
 }
 
 .banner {
@@ -46,4 +55,16 @@ ul#nav-item > li,
     border: none;
     background: transparent;
     position: absolute;
+}
+
+
+/*=================================
+    Hero
+=================================*/
+
+.hero-img {
+    background-image: url("../image/hero.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }

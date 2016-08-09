@@ -7,29 +7,36 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-    redimensionHero();
+    resizeElement.setFullSizeHero()
+
 });
 
 
 function setup() {
-    startFullSizeHero()
+    resizeElement.setFullSizeHero()
 }
 
-function startFullSizeHero() {
-    if ($('#full-screen-slider').length) {
-        var windowHeight = $(window).height();
-        console.log(windowHeight);
-        // var windowWidth = $(window).width();
-        $('#full-screen-slider').css({
-            'height': windowHeight,
-            'width': "100%"
-        });
+var resizeElement = {
+    setFullSizeHero: function () {
+        var fullScreenSlider = $('#full-screen-slider')
+        if (fullScreenSlider.length) {
+            var windowHeight = $(window).height();
+            console.log(windowHeight);
+            // var windowWidth = $(window).width();
+            fullScreenSlider.css({
+                'height': windowHeight,
+                'width': "100%"
+            });
 
-        $('#full-screen-slider .hero-container > img').css({
-            'height': windowHeight,
-            'width': "100%"
-        })
-    }
-}
-
-function redimensionHero() {}
+            $('.hero-img').css({
+                'height': windowHeight,
+                'width:': "100%"
+            });
+            // if
+            // $('#full-screen-slider .hero-container > img').css({
+            //     'height': windowHeight,
+            //     'width': "100%"
+            // })
+        }
+    },
+};
