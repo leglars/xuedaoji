@@ -8,6 +8,11 @@
         padding-right: 10px;
     }
 
+    #logo {
+        width: 90%;
+        height: auto;
+    }
+
 }
 
 
@@ -34,8 +39,13 @@
         font-size: 16px;
     }
 
-    #logo {
+    #logo-container {
         padding-left: calc(80px - 40px - 15px);
+    }
+
+    #logo {
+        width: 65%;
+        height: auto;
     }
 
     .navbar-right {
