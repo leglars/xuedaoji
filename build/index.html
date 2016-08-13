@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="application-name" content="合肥学道吉教育咨询有限公司官方网站">
-    <meta name="description" content="">
+    <meta name="application-name" content="合肥学道吉教育科技有限公司官方网站">
+    <meta name="description" content="
+    学道吉拥有安徽省内最专业的SAT理科和AP课程教学团队，任课老师均为中国科学技术大学的硕士或博士研究生。目前开设的AP课程有： 微积分、物理、化学、微观&宏观经济、心理学、美国历史等。同时开设托福、雅思、SAT等精品培训课程。
+    ">
 
     <meta property="og:locale" content="zh-CN">
     <meta property="og:type" content="website">
@@ -22,7 +24,7 @@
     <link rel="stylesheet" href="static/css/media.css">
 
     <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="//cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+    <!--<script type="text/javascript" src="//cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>-->
     <script type="text/javascript" src="js/hero.js"></script>
 </head>
 <body>
@@ -30,7 +32,10 @@
     <!--<div class="affix affix-top">-->
 
     <nav class="navbar navbar-default">
-        <div class="nav-wrap"><div class="container-fluid">
+        <!-- 所以这里要写两套样式， 一套是通过 .no-fix .xx 来控制，
+             通过 js 替换 .no-fix 成 .fix, .fix .xx 的样式构建一个新的nav-->
+        <div class="nav-wrap fix">
+            <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button id="collapse-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -44,7 +49,10 @@
                 <div id="logo-container">
                     <a href="index.html" class="navbar-brand">
                         <!--学道吉-->
+
+                        <!--TODO: ajust the space when change the screen size-->
                         <img id="logo" alt="Brand" src="static/image/logo-white.png">
+                        <img id="logo-fix" alt="Brand" src="static/image/logo-white.png">
                     </a>
                 </div>
             </div>
@@ -64,9 +72,9 @@
     </nav>
     <!--</div>-->
 </header>
-<main>
+<main class="clearfix">
     <section id="hero">
-        <div class="wrap">
+        <div class="hero-wrap">
             <div id="full-screen-slider">
                 <div class="hero-container">
                     <div class="hero-img"></div>
@@ -219,16 +227,18 @@
 4) 每次刷新内容都会变的标签，请勿设置有字库字体。
 
 -->
-<script type="text/javascript">
-//    $youziku.load("#id1", "95fa0314ff2f4e838ea25ab2fc5fae9d", "SiYuanRegular");
-    /*$youziku.load("#id2", "95fa0314ff2f4e838ea25ab2fc5fae9d", "SiYuanRegular");*/
-    $youziku.load(".navbar-font", "95fa0314ff2f4e838ea25ab2fc5fae9d", "SiYuanRegular");
-    /*$youziku.load(".class2", "95fa0314ff2f4e838ea25ab2fc5fae9d", "SiYuanRegular");*/
-    /*$youziku.load("h1", "95fa0314ff2f4e838ea25ab2fc5fae9d", "SiYuanRegular");*/
-    /*$youziku.load("h2", "95fa0314ff2f4e838ea25ab2fc5fae9d", "SiYuanRegular");*/
-    /*．．．*/
-    $youziku.draw();
-</script>
+<!--<script type="text/javascript">-->
+<!--//    $youziku.load("#id1", "95fa0314ff2f4e838ea25ab2fc5fae9d", "SiYuanRegular");-->
+    <!--/*$youziku.load("#id2", "95fa0314ff2f4e838ea25ab2fc5fae9d", "SiYuanRegular");*/-->
+    <!--$youziku.load(".navbar-font", "95fa0314ff2f4e838ea25ab2fc5fae9d", "SiYuanRegular");-->
+    <!--/*$youziku.load(".class2", "95fa0314ff2f4e838ea25ab2fc5fae9d", "SiYuanRegular");*/-->
+    <!--/*$youziku.load("h1", "95fa0314ff2f4e838ea25ab2fc5fae9d", "SiYuanRegular");*/-->
+    <!--/*$youziku.load("h2", "95fa0314ff2f4e838ea25ab2fc5fae9d", "SiYuanRegular");*/-->
+    <!--/*．．．*/-->
+    <!--$youziku.draw();-->
+<!--</script>-->
 <!--Api End-->
+
+<!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>-->
 </body>
 </html>
