@@ -1,4 +1,36 @@
+.wrap {
+    padding-top: 36px;
+}
 
+a,
+a:hover,
+a:visited,
+a:link,
+a:active{
+    text-decoration: none;
+}
+
+.button {
+    background-color: #ffd600;
+    border: 0;
+    border-radius: 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #333333;
+    padding: 10px 30px;
+}
+
+.button-lg {
+
+}
+
+.button-highlight {
+
+}
+
+.button-highlight:hover {
+
+}
 
 /*=========================================
      Header
@@ -11,10 +43,6 @@
 .navbar {
     border:0 transparent;
 }
-
-.nav-wrap {
-     padding-top: 40px;
- }
 
 ul#nav-item > li {
     padding-right: 20px;
@@ -49,6 +77,12 @@ ul#nav-item > li,
     transition: all 0.1s ease-out;
 }
 
+#logo-fix {
+    display: none;
+    width: 70%;
+    height: auto;
+}
+
 .banner {
     z-index: 100;
     width: 100%;
@@ -57,6 +91,30 @@ ul#nav-item > li,
     position: absolute;
 }
 
+.nav-wrap {
+    padding-top: 40px;
+}
+
+.fix {
+    position: fixed;
+}
+
+.nav-wrap.fix {
+    z-index: 999;
+    opacity: 1;
+    width: 100%;
+    background-color: #323C46;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.nav-wrap.fix #logo-fix {
+    display: block;
+}
+
+.nav-wrap.fix #logo {
+    display: none;
+}
 
 /*=================================
     Hero
@@ -67,4 +125,84 @@ ul#nav-item > li,
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+
+/*==================================
+    About us
+===================================*/
+
+#teamPhoto {
+    width: 100%;
+    height: auto;
+}
+
+
+/*==================================
+    Our Team
+===================================*/
+
+#teacherAvatar .col-md-4 {
+    padding: 0;
+}
+
+#teacherAvatar {
+    padding: 10px;
+}
+
+.teacherAvatar {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    /*border: solid 5px;*/
+    /*border-color: rgba(0,0,0,0) transparent;*/
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+
+.teacherAvatarWrap {
+    padding: 10px;
+}
+
+.teacherAvatar:hover {
+    border: solid 5px #ffd600;
+    border-radius: 1px;
+    /*box-sizing: content-box;*/
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+
+
+
+/*==================================
+    Footer
+===================================*/
+
+footer {
+  background-color: #dddddd;
+}
+
+.footer-title {
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 16px 0 36px 0;
+}
+
+#contact-number {
+    font-size: 36px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: #666666;
+    padding: calc(48px - 36px) 0 24px 0;
+
+}
+
+#QRcode {
+  width: 150px;
+  height: auto;
+  padding: 8px;
 }

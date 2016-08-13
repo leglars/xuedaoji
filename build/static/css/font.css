@@ -1,9 +1,24 @@
+@font-face {
+    font-family: NotoSansHans;
+    src: url(../font/NotoSansHans-Regular.otf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: NotoSansHans;
+    src: url(../font/NotoSansHans-Bold.otf);
+    font-style: normal;
+    font-weight: bold;
+}
+
 body {
-    font-family: 黑体，苹方，宋体;
+    font-family: 'NotoSansHans', 黑体，苹方，宋体;
 }
 
 .navbar-font{
-    font-size: 18px;
+    font-size: 20px;
+    letter-spacing: 1px;
     -webkit-transition: font-size 0.1s ease-out;  /* Chrome 1-25, Safari 3.2+ */
     -moz-transition: font-size 0.1s ease-out;  /* Firefox 4-15 */
     -o-transition: font-size 0.1s ease-out;  /* Opera 10.50â€“12.00 */
@@ -24,4 +39,12 @@ body {
     -moz-transition: color 0.2s ease-out;  /* Firefox 4-15 */
     -o-transition: color 0.2s ease-out;  /* Opera 10.50â€“12.00 */
     transition: color 0.2s ease-out;
+}
+
+/*==================================
+    About us
+===================================*/
+
+.aboutUs-introduce {
+
 }
