@@ -32,6 +32,13 @@ a:active{
 
 }
 
+
+@media(min-width: 1600px) {
+    .container {
+        min-width: 1410px;
+    }
+}
+
 /*=========================================
      Header
 =========================================*/
@@ -42,6 +49,16 @@ a:active{
 
 .navbar {
     border:0 transparent;
+}
+
+.nav-wrap {
+    padding: 48px 0 16px 0;
+/*    background-color: #666666;*/
+    
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
 }
 
 ul#nav-item > li {
@@ -57,20 +74,30 @@ ul#nav-item > li,
     transition: padding 0.1s ease-out;
 }
 
+.navbar-header,
+.navbar-brand{
+    height: 70px;
+    width: auto;
+    padding-left: 0;
+    padding-top: 0;
+
+}
+
 #nav-collapse-list {
     /*  the total padding of nav is 80px,
     and the header (.nav-wrap) already offers 40px
     */
-    padding-top: calc(80px - 40px);
+/*    padding-top: calc(60px - 40px);*/
+    padding: 0;
 }
 
-#logo-container {
-    padding-left: calc(80px - 15px);
-}
+/*#logo-container {*/
+    /*padding-left: calc(80px - 15px);*/
+/*}*/
 
 #logo {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 50px;
     -webkit-transition: all 0.1s ease-out;
     -moz-transition: all 0.1s ease-out;
     -o-transition: all 0.1s ease-out;
@@ -79,8 +106,12 @@ ul#nav-item > li,
 
 #logo-fix {
     display: none;
-    width: 70%;
-    height: auto;
+    width: auto;
+    height: 50px;
+}
+
+#nav-item {
+    padding: calc(70px - 50px) 0;
 }
 
 .banner {
@@ -91,10 +122,8 @@ ul#nav-item > li,
     position: absolute;
 }
 
-.nav-wrap {
-    padding-top: 40px;
-}
 
+/*================== fix =================*/
 .fix {
     position: fixed;
 }
@@ -106,10 +135,41 @@ ul#nav-item > li,
     background-color: #323C46;
     box-shadow: none;
     -webkit-box-shadow: none;
+    padding-top: 8px;
+    
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
 }
+
+.nav-wrap.fix .navbar-header,
+.nav-wrap.fix .navbar-brand{
+    height: 60px;
+    width: auto;
+    padding-left: 0;
+    padding-top: 4px;
+
+}
+
+.nav-wrap.fix ul>li>a {
+    padding-top: 4px;
+}
+
 
 .nav-wrap.fix #logo-fix {
     display: block;
+    height: 45px;
+}
+
+.nav-wrap.fix #nav-item {
+/*    第一个参数是navbar-header的高
+      第二个参数是logo 或 logo-fix的高   */
+    padding-top: calc(60px - 45px);
+}
+
+.nav-wrap.fix ul#nav-item {
+    padding-bottom: 4px;
 }
 
 .nav-wrap.fix #logo {

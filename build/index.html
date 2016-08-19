@@ -34,41 +34,41 @@
     <nav class="navbar navbar-default">
         <!-- 所以这里要写两套样式， 一套是通过 .no-fix .xx 来控制，
              通过 js 替换 .no-fix 成 .fix, .fix .xx 的样式构建一个新的nav-->
-        <div class="nav-wrap fix">
+        <div id="addNavFix" class="nav-wrap">
             <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button id="collapse-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#nav-collapse-list" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <div id="logo-container">
+                        <a href="index.html" class="navbar-brand">
+                            <!--学道吉-->
 
-                <div id="logo-container">
-                    <a href="index.html" class="navbar-brand">
-                        <!--学道吉-->
+                            <!--TODO: ajust the space when change the screen size-->
+                            <img id="logo" alt="Brand" src="static/image/logo-white.png">
+                            <img id="logo-fix" alt="Brand" src="static/image/logo-white.png">
+                        </a>
+                    </div>
 
-                        <!--TODO: ajust the space when change the screen size-->
-                        <img id="logo" alt="Brand" src="static/image/logo-white.png">
-                        <img id="logo-fix" alt="Brand" src="static/image/logo-white.png">
-                    </a>
+                    <button id="collapse-button" type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#nav-collapse-list" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                 </div>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="nav-collapse-list">
-                <ul id="nav-item" class="nav navbar-nav navbar-right">
-                    <li class="menu-index"><a class="navbar-font" href="#">首页</a></li>
-                    <li class="menu-course"><a class="navbar-font" href="#">课程介绍</a></li>
-                    <li class="menu-teacher"><a class="navbar-font" href="#">师资力量</a></li>
-                    <li class="menu-story"><a class="navbar-font" href="#">留学故事</a></li>
-                    <li class="menu-community"><a class="navbar-font" href="#">社区</a></li>
-                    <li class="menu-search"></li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid --></div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="nav-collapse-list">
+                    <ul id="nav-item" class="nav navbar-nav navbar-right">
+                        <li class="menu-index"><a class="navbar-font" href="#">首页</a></li>
+                        <li class="menu-course"><a class="navbar-font" href="#">课程介绍</a></li>
+                        <li class="menu-teacher"><a class="navbar-font" href="#">师资力量</a></li>
+                        <li class="menu-story"><a class="navbar-font" href="#">留学故事</a></li>
+                        <li class="menu-community"><a class="navbar-font" href="#">社区</a></li>
+                        <li class="menu-search"></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid --></div>
     </nav>
     <!--</div>-->
 </header>
@@ -83,12 +83,12 @@
 
                 <!--the rest dom for adding switchable slider-->
                 <!--<div class="hero-container">-->
-                    <!--<div class="hero-img"></div>-->
-                    <!--&lt;!&ndash;<img src="static/image/hero.jpg">&ndash;&gt;-->
+                <!--<div class="hero-img"></div>-->
+                <!--&lt;!&ndash;<img src="static/image/hero.jpg">&ndash;&gt;-->
                 <!--</div>-->
                 <!--<div class="hero-container">-->
-                    <!--<div class="hero-img"></div>-->
-                    <!--&lt;!&ndash;<img src="static/image/hero.jpg">&ndash;&gt;-->
+                <!--<div class="hero-img"></div>-->
+                <!--&lt;!&ndash;<img src="static/image/hero.jpg">&ndash;&gt;-->
                 <!--</div>-->
                 <!--...-->
             </div>
