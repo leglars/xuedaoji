@@ -1,6 +1,8 @@
 /**
  * Created by llegl on 2016/8/3.
  */
+'use strict'
+
 
 $(document).ready(function() {
     setup()
@@ -10,8 +12,10 @@ $(window).resize(function() {
     if ($(window).width() > 768) {
         resizeElement.setAboutUsFullSize();
         resizeElement.setOurTeamFullSize();
+        resizeElement.changeToNormalNavbar();
     } else {
         resizeElement.resetOtherSectionsHeight();
+        resizeElement.changeToFixNavbar();
     }
     resizeElement.setFullSizeHero();
 });
@@ -21,6 +25,10 @@ function setup() {
     if ($(window).width() > 768) {
         resizeElement.setAboutUsFullSize();
         resizeElement.setOurTeamFullSize();
+        resizeElement.changeToNormalNavbar();
+    }
+    else {
+        resizeElement.changeToFixNavbar();
     }
     resizeElement.setFullSizeHero();
 }
@@ -50,8 +58,8 @@ var resizeElement = {
     },
 
     setAboutUsFullSize: function() {
-        var aboutUs = $("#aboutUs");
-        var windowHeight = $(window).height();
+        var aboutUs = $("#aboutUs"),
+            windowHeight = $(window).height();
         if (windowHeight > 700) {
             aboutUs.css({
                 'height': windowHeight,
@@ -66,8 +74,8 @@ var resizeElement = {
     },
 
     setOurTeamFullSize: function() {
-        var ourTeam = $("#ourTeam");
-        var windowHeight = $(window).height();
+        var ourTeam = $("#ourTeam"),
+            windowHeight = $(window).height();
         if (windowHeight > 700) {
             ourTeam.css({
                 'height': windowHeight,
@@ -82,13 +90,21 @@ var resizeElement = {
     },
 
     resetOtherSectionsHeight: function() {
-        var aboutUs = $("#aboutUs");
-        var ourTeam = $("#ourTeam");
+        var aboutUs = $("#aboutUs"),
+            ourTeam = $("#ourTeam");
         aboutUs.css({
             'height': 'auto'
         });
         ourTeam.css({
             'height': 'auto'
         })
+    },
+    
+    changeToFixNavbar: function() {
+        $("#addNavFix").addClass('fix');
+    },
+    
+    changeToNormalNavbar: function() {
+        $("#addNavFix").removeClass('fix');
     }
 };
