@@ -197,20 +197,166 @@ ul#nav-item > li,
     height: auto;
 }
 
-
 /*==================================
-    Our Team
+    Flow
 ===================================*/
 
-#teacherAvatar .col-md-4 {
+#flow {
+    background-image: url(../image/flowBackground.png);
+    height: 700px;
+}
+
+/* 7等分 */
+
+#flowFrame {
+    width: 100%;
+    
+    background-image: url(../image/flowIcon/flowIconBackground.png);
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    padding: 0;
+    margin: 36px 0;
+    margin-bottom: 64px;
+
+}
+
+#flowFrame .flowContentWrap {
+    padding: 50px 0;
+    margin: 0;
+}
+
+#flowFrame .flowContentWrap:before,
+#flowFrame .flowContentWrap:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+#flowFrame .row {
+    width: 100%;
+    padding: 0 100px;
+    margin: 0;
+}
+
+#flow .col-flow {
+    height: auto;
+    display: inline-block;
+}
+
+#flow .col-flow.icon {
+    width: 17%;
+}
+
+#flow .col-flow.line {
+    width: 10%;
+    height: inherit;
+}
+
+.icon,
+.line {
+    text-align: center;
+}
+
+.iconText {
+    color: #666;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.consult {
+    background-image: url(../image/flowIcon/consultant.png)
+}
+
+/*
+.iconText {
+    padding-top: 85px;
+}
+*/
+
+
+.lineWrap {
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+    margin: auto 0;
+}
+
+.linePic {
+    background-image: url(../image/flowIcon/dotLineCut.png);
+    background-position: left center;
+    background-repeat: repeat-x;
+    
+    height: 85px;
+    width: 100%;
+}
+
+/*
+.line {
+    vertical-align: middle;
+}
+*/
+
+#flowFrame .row.right {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-right: 0.5%;
+}
+
+#flowFrame .row.right .col-flow,
+#flowFrame .row.right{
+    float: right;
+}
+
+#flowFrame .row.right .col-flow.line.middle {
+    width: 16%;
+}
+
+#flowFrame .row.right .linePicVertical {
+    background-image: url(../image/flowIcon/dotLineCutVertical.png);
+    background-position: center top;
+    background-repeat: repeat-y;
+
+    height: 48px;
+}
+
+
+/*==================================
+    Our Team & course
+===================================*/
+
+#course,
+#ourTeam,
+#flow {
+    width: 100%;
+    height: auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#course {
+    background-image: url(../image/courseBackground.png);
+}
+
+#ourteam {
+    background-image: url(../image/courseBackground.png);
+}
+
+
+#teacherAvatar .col-md-4,
+#coursePic .col-md-6{
     padding: 0;
 }
 
-#teacherAvatar {
+#teacherAvatar,
+#coursePic{
     padding: 10px;
 }
 
-.teacherAvatar {
+.teacherAvatar,
+.coursePic{
     width: 100%;
     height: auto;
     cursor: pointer;
@@ -222,11 +368,13 @@ ul#nav-item > li,
     transition: all 0.1s ease-out;
 }
 
-.teacherAvatarWrap {
+.teacherAvatarWrap,
+.coursePicWrap{
     padding: 10px;
 }
 
-.teacherAvatar:hover {
+.teacherAvatar:hover,
+.coursePic:hover {
     border: solid 5px #ffd600;
     border-radius: 1px;
     /*box-sizing: content-box;*/
