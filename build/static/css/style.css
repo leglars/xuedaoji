@@ -176,6 +176,16 @@ ul#nav-item > li,
     display: none;
 }
 
+
+/*为导航栏保留的视觉留白*/
+#aboutUs,
+#course,
+#flow,
+#ourTeam {
+    padding-top: 100px;
+}
+
+
 /*=================================
     Hero
 =================================*/
@@ -338,10 +348,54 @@ ul#nav-item > li,
 
 #course {
     background-image: url(../image/courseBackground.png);
+    background-size: contain;
 }
 
-#ourteam {
-    background-image: url(../image/courseBackground.png);
+#ourTeam {
+    padding-top: 0;
+/*    background-image: url(../image/ourTeamBackground.jpg);*/
+}
+
+#ourTeam>.twoColGroup {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+#ourTeam>.twoColGroup .col{
+    padding-top: 100px;
+    height: 100%;
+    float: left;
+    display: block;
+    position: relative;
+    padding: 3%;
+}
+
+#ourTeam>.twoColGroup .col:nth-child(1) {
+    width: calc(35% - 6%);
+    background-color: #595959;
+    left: 0
+}
+
+#ourTeam>.twoColGroup .col:nth-child(2) {
+    width: 65%;
+    background-color: #cccccc;
+    
+}
+
+#ourTeam>.twoColGroup:before,
+#ourTeam>.twoColGroup:after {
+    content: " ";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 33.4%;
+    width: 33.4%;
+    height: 100%;
+}
+
+#ourTeam>.twoColGroup:after {
+    left: 66.667%;
 }
 
 
@@ -353,6 +407,11 @@ ul#nav-item > li,
 #teacherAvatar,
 #coursePic{
     padding: 10px;
+/*
+    padding-right: 15%;
+    padding-bottom: 140px;
+    padding-left: 5%;
+*/
 }
 
 .teacherAvatar,
