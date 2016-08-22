@@ -1,15 +1,27 @@
 /**
  * Created by llegl on 2016/8/3.
  */
-'use strict'
+
 
 
 $(document).ready(function() {
-    setup()
+    setup();
 });
 
-$(window).resize(function() {
-    if ($(window).width() > 768) {
+var view = $(window);
+
+$(window).scroll(function() {
+        console.log($(window).scrollTop())
+        if($(window).scrollTop() > 55) {
+            resizeElement.changeToFixNavbar();
+        } else {
+            console.log("ye");
+            resizeElement.changeToNormalNavbar();
+        }
+    }) 
+
+view.resize(function() {
+    if (view.width() > 768) {
         resizeElement.setAboutUsFullSize();
         resizeElement.setOurTeamFullSize();
         resizeElement.changeToNormalNavbar();
@@ -21,8 +33,12 @@ $(window).resize(function() {
 });
 
 
+
+
+
+
 function setup() {
-    if ($(window).width() > 768) {
+    if (view.width() > 768) {
         resizeElement.setAboutUsFullSize();
         resizeElement.setOurTeamFullSize();
         resizeElement.changeToNormalNavbar();
@@ -101,6 +117,7 @@ var resizeElement = {
     },
     
     changeToFixNavbar: function() {
+        console.log("ha");
         $("#addNavFix").addClass('fix');
     },
     
