@@ -11,14 +11,13 @@ $(document).ready(function() {
 var view = $(window);
 
 $(window).scroll(function() {
-        console.log($(window).scrollTop())
         if($(window).scrollTop() > 55) {
             resizeElement.changeToFixNavbar();
         } else {
-            console.log("ye");
             resizeElement.changeToNormalNavbar();
         }
-    }) 
+        // resizeElement.makeIntroScroll();
+    });
 
 view.resize(function() {
     if (view.width() > 768) {
@@ -30,11 +29,8 @@ view.resize(function() {
         resizeElement.changeToFixNavbar();
     }
     resizeElement.setFullSizeHero();
+    // resizeElement.makeIntroScroll();
 });
-
-
-
-
 
 
 function setup() {
@@ -47,6 +43,7 @@ function setup() {
         resizeElement.changeToFixNavbar();
     }
     resizeElement.setFullSizeHero();
+    // resizeElement.makeIntroScroll();
 }
 
 var resizeElement = {
@@ -123,5 +120,14 @@ var resizeElement = {
     
     changeToNormalNavbar: function() {
         $("#addNavFix").removeClass('fix');
+    },
+
+    makeIntroScroll: function() {
+    	var introText = $("#aboutUsIntro");
+    	if (introText.height() > 460) {
+    		introText.addClass("scroll");
+    	} else {
+    		introText.removeClass("scroll");
+    	}
     }
 };
