@@ -132,7 +132,7 @@ ul#nav-item > li,
     z-index: 999;
     opacity: 1;
     width: 100%;
-    background-color: #323C46;
+    background-color: rgba(50, 60, 70, 0.95);
     box-shadow: none;
     -webkit-box-shadow: none;
     padding-top: 8px;
@@ -197,6 +197,19 @@ ul#nav-item > li,
     background-repeat: no-repeat;
 }
 
+.heroBanner {
+    position: relative;
+    height: 100%;
+}
+
+#heroBanner {
+    position: absolute;
+    max-width: 550px;
+    width: 50%;
+    top: 45%;
+    left: 40%;
+}
+
 
 /*==================================
     About us
@@ -207,13 +220,45 @@ ul#nav-item > li,
     height: auto;
 }
 
+.midMargin {
+    padding-right: 36px;
+}
+
+.aboutUsBanner {
+    margin-bottom: 56px;
+    text-align: center
+}
+
+img#aboutUsBanner {
+    width: 50%
+}
+
+#aboutUsIntro {
+    max-height: 500px;
+}
+
 /*==================================
     Flow
 ===================================*/
 
 #flow {
+    padding-top: 150px;
     background-image: url(../image/flowBackground.png);
     height: 700px;
+}
+
+
+.flowBanner {
+    padding-left: 15%;
+}
+
+img#flowBanner {
+    width: 70%;
+}
+
+#flowIntro {
+    width: 65%;
+    margin-left: 25%
 }
 
 /* 7等分 */
@@ -227,7 +272,7 @@ ul#nav-item > li,
     background-repeat: no-repeat;
     
     padding: 0;
-    margin: 36px 0;
+    margin: 56px 0;
     margin-bottom: 64px;
 
 }
@@ -348,12 +393,47 @@ ul#nav-item > li,
 
 #course {
     background-image: url(../image/courseBackground.png);
-    background-size: contain;
+    
+    padding-top: 150px;
 }
 
 #ourTeam {
     padding-top: 0;
 /*    background-image: url(../image/ourTeamBackground.jpg);*/
+}
+
+.courseBanner {
+/*    padding-top: 1px;*/
+    margin-top: 32%;
+    margin-left: 30%;
+}
+
+.css-table {
+    display: table;
+    margin-bottom: 80px;
+}
+
+.css-table:before,
+.css-table:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.css-table .col {
+    display: table-cell;
+    position: relative;
+}
+
+#course .css-table .col:nth-child(1) {
+    width: 35%;
+}
+
+#course .css-table .col:nth-child(2) {
+    width: 50%;
+}
+
+#coursePic {
 }
 
 #ourTeam>.twoColGroup {
@@ -389,12 +469,14 @@ ul#nav-item > li,
 #ourTeam>.twoColGroup>.col:nth-child(2) {
     width: 65%;
     background-color: #cccccc;
+    padding-left: 1%;
+    padding-right: 7%
     
 }
 
 /*can't use one true layout here, the word should attach the bottom*/
 #ourTeamLeftColContent>.col:nth-child(1) {
-    width: 35%;
+    width: 30%;
     max-width: 35%;
     text-align: left;
 }
@@ -406,12 +488,13 @@ ul#nav-item > li,
 }
 
 img#ourTeamBackgroundWord {
-    width: 70%;
-    padding-top: 10px;
+    width: 76%;
+    padding-top: 80px;
+    margin-left: 5%;
 }
 
 img#ourTeamBanner {
-    width: 65%;
+    width: 85%;
     margin-bottom: 36px;
 }
 
@@ -420,10 +503,8 @@ img#ourTeamBanner {
     padding: 0;
 }
 
-#teacherAvatar,
-#coursePic{
+#teacherAvatar{
     padding: 10px;
-    padding-right: 10%;
     padding-bottom: 140px;
 }
 
@@ -485,4 +566,13 @@ footer {
   width: 150px;
   height: auto;
   padding: 8px;
+}
+
+#copyright {
+    text-align: center;
+    padding: 36px 0;
+    
+    font-size: 1.2em;
+    text-shadow: 1px;
+    color: #777
 }

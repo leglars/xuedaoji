@@ -1,5 +1,5 @@
 /*   mid desktop   */
-@media (min-width: 992px), (max-width: 1600px) {
+@media (max-width: 1600px) {
     /*=====================
         header
     =======================*/
@@ -12,6 +12,10 @@
         width: 90%;
         height: auto;
     }
+    
+    #aboutUsIntro {
+    overflow-y: scroll;
+}
 
 }
 
@@ -52,6 +56,11 @@
         float: left!important;
         margin-left: 10px;
     }
+    
+        #aboutUsIntro {
+    overflow-y: scroll;
+}
+
 }
 
 
@@ -65,5 +74,10 @@
     .nav-wrap {
         padding-top: 24px;
     }
+    
+        #aboutUsIntro {
+    overflow-y: scroll;
+}
+
 
 }

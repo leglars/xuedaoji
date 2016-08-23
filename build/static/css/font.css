@@ -1,3 +1,4 @@
+/*
 @font-face {
     font-family: NotoSansHans;
     src: url(../font/NotoSansHans-Regular.otf);
@@ -11,9 +12,11 @@
     font-style: normal;
     font-weight: bold;
 }
+*/
 
 body {
     font-family: 'NotoSansHans', 黑体，苹方，宋体;
+    font-size: 12px;
 }
 
 .navbar-font{
@@ -45,6 +48,51 @@ body {
     About us
 ===================================*/
 
-.aboutUs-introduce {
+.aboutUsIntro {
+    font-size: 1.5em;
+    line-height: 1.7em;
+    letter-spacing: 1px;
+}
 
+.aboutUsIntro:not(:first-child) {
+    text-indent: 2.3em;
+}
+
+.firstLetter {
+    float: left; color: #555555; font-size: 3em; line-height: 40px; padding-top: 4px; padding-right: 8px; padding-left: 3px;
+}
+
+/*==================================
+    Flow
+===================================*/
+
+#flowIntro {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    text-indent: 2em;
+    line-height: 1.7em;
+    color: #555;
+}
+
+
+/*==================================
+    Our Team
+===================================*/
+
+#teacherName {
+    font-size: 2.3em;
+    color: #ffd600;
+    letter-spacing: 3px;
+    line-height: 2em;
+    margin-bottom: 36px;
+}
+
+#teacherIntro {
+    font-size: 1.5em;
+    text-align: left;
+    text-indent: 2em;
+    line-height: 1.6em;
+    color: #cccccc;
+    width: 100%;
+    padding: 0 7%;
 }
